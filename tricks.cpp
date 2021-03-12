@@ -16,6 +16,24 @@ void write(const T... args)
     ( (cout << args << " "), ...);
 }
 
+
+void cpy(char* p, const char* q) // copy 2 strings
+{
+	while(*p++ = *q++);
+}
+
+void print(const char* p) // print a string of chars
+{
+	while(*p) 
+		std::cout << *p++;
+}
+
+void print(const int* p) // print an int vector
+{
+	for(; *p != -1; p++)
+		std::cout << *p << " ";
+}
+
 int main()
 {
     /*
