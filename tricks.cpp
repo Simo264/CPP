@@ -17,9 +17,9 @@ void write(const T... args)
 }
 
 
-void cpy(char* p, const char* q) // copy 2 strings
+void cpy(char* to, const char* from) // copy 2 strings
 {
-	while(*p++ = *q++);
+	while(*to++ = *from++);
 }
 
 void print(const char* p) // print a string of chars
