@@ -1,0 +1,8 @@
+1. compile Lib source file "MathLibrary.cpp"
+    g++ -c MathLibrary.cpp
+
+2. create Lib file from object file "MathLibrary.o"
+    lib MathLibrary.o /out:MathLibrary.lib
+
+3. compile main file and link to lib file
+    g++ main.cpp -o main -L. -lMathLibrary
