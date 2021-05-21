@@ -1,0 +1,8 @@
+1. compile Lib source file "MathLibrary.cpp"
+    g++ -c MathLibrary.cpp
+
+2. create DLL file from object file "MathLibrary.o"
+    g++ MathLibrary.o -o MathLibrary.dll -s -shared
+
+3. compile main file and link to DLL file
+    g++ main.cpp -o main -s -L. -lMathLibrary
